@@ -1,31 +1,24 @@
 # Dorrigo Heritage Gateway — current status
 
 Last verified: 2026-09-23 (Australia/Sydney).
-Site/deployment revision: `1a9556fa2036759c551cf7b3d9def1a83c8c6987`.
+Site/deployment revision: `a7f9df2fe57af55e7226214e34073e58a99fb769`.
 This snapshot is carried by a subsequent documentation-only commit; use
-`git log 1a9556f..HEAD` to identify later changes. No site files changed in that
+`git log a7f9df2..HEAD` to identify later changes. No site files changed in that
 handover commit, which skips CI to retain the verified deployment revision.
-
-## Current local update — hotel photographs
-
-Based on Git revision `48dbafabb881751f48e6fd14ad7fdc113ce5ba90`. Added
-three hotel-page photographs: 2006 exterior, 2012 verandah and Michael/Elene’s
-1929 wedding portrait. Website permission confirmed by the requester; see
-[image provenance](docs/IMAGE_CREDITS.md). Local Chrome checks at 320, 390,
-768 and 1440 pixels passed with zero axe violations. Publication pending; the
-deployment evidence below still describes the previous release.
 
 ## Verified state
 
 - Repository: https://github.com/stu2454/Dorrigo-heritage-gateway.git
-- Branch: main, tracking origin/main. Initial site committed and pushed.
-- [Deployment 35820783708](https://github.com/stu2454/Dorrigo-heritage-gateway/actions/runs/35820783708)
+- Branch: main, tracking origin/main. Image update committed and pushed.
+- [Deployment 35822217941](https://github.com/stu2454/Dorrigo-heritage-gateway/actions/runs/35822217941)
   succeeded using the supplied workflow. Pages source is GitHub Actions;
   HTTPS is enforced. No user settings changes are needed.
 - [Homepage](https://stu2454.github.io/Dorrigo-heritage-gateway/) and
   [hotel demonstration](https://stu2454.github.io/Dorrigo-heritage-gateway/places/dorrigo-hotel/)
   are publicly live and verified. Concept labels and source links are visible.
-- Documentation, preview helper and a mobile layout fix are complete. No feature
+- The hotel page now includes the 2006 exterior, 2012 verandah and Michael/Elene’s
+  1929 wedding portrait, with captions and credits. Permission and licence
+  evidence is in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md). No feature
   work is in progress. Recheck Git status at the start of the next session.
 
 ## Validation of the revision above
@@ -34,11 +27,12 @@ Local and live Chrome checks at 320, 390, 768 and 1440 pixels passed both pages:
 HTTP 200, images loaded, no horizontal overflow, one h1 per page and en-AU
 language. Homepage-to-hotel and return navigation passed at every width.
 Keyboard Tab reached the skip link. Axe WCAG 2 A/AA and 2.1 AA checks reported
-zero violations. Desktop and mobile screenshots were visually inspected.
+zero violations. Local desktop and mobile hotel screenshots were visually
+inspected, including the wedding portrait framing.
 
-All 11 distinct internal URLs, assets and fragment targets passed. Live HTML,
-CSS and PNG response bytes matched the committed local site. Apple Vision
-independently decoded hotel-qr.png to the exact live hotel URL above; that URL
+All 14 distinct internal URLs, assets and fragment targets passed. Live HTML,
+CSS and image response bytes matched the committed local site. The unchanged QR was previously independently decoded by Apple Vision; it
+decoded hotel-qr.png to the exact live hotel URL above; that URL
 was opened in the browser checks. All three PNGs match the starter ZIP bytes.
 `git diff --check` passed. Validation tools were temporary and add no runtime
 or npm dependencies to the project. See README.md for repeatable manual checks.

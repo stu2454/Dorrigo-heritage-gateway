@@ -85,3 +85,12 @@ decoding, direct hotel access, navigation, no horizontal overflow and zero axe
 WCAG A/AA violations. Visually inspected the desktop hotel layout and portrait
 framing. All 14 internal URL/asset/fragment checks passed. Final caption wording
 was shortened to keep permission administration in the source record.
+
+Published image release `a7f9df2fe57af55e7226214e34073e58a99fb769` on main.
+Actions run https://github.com/stu2454/Dorrigo-heritage-gateway/actions/runs/35822217941
+succeeded. Live checks passed at 320, 390, 768 and 1440 pixels for both pages:
+images decoded, navigation worked, no horizontal overflow and zero axe WCAG
+A/AA violations. All 14 internal URLs/assets/fragments passed and response bytes
+matched the new release. Local mobile and desktop hotel screenshots were
+visually reviewed. The unchanged QR still points to the same hotel route.
+Status/log handover follows in a docs-only [skip ci] commit; no site changes.

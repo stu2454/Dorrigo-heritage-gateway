@@ -32,3 +32,36 @@ not replace a physical phone scan or full screen-reader audit.
 
 Enabled GitHub Pages with build_type=workflow and HTTPS enforced under the
 requester's initial publication authorisation. Public deployment remains pending.
+
+## 2026-09-23 — publication verified and handover
+
+Committed and pushed initial release `1a9556fa2036759c551cf7b3d9def1a83c8c6987`
+to main. GitHub Actions run 35820783708 completed successfully:
+https://github.com/stu2454/Dorrigo-heritage-gateway/actions/runs/35820783708
+Pages uses GitHub Actions with HTTPS enforced; no user setting change remains.
+
+Verified both live pages with headless Chrome/Playwright at 320, 390, 768 and
+1440 pixels: HTTP 200, no missing images, no horizontal overflow, navigation
+in both directions and skip-link keyboard focus passed. Axe WCAG A/AA checks
+reported zero violations. Inspected local desktop/mobile screenshots of both
+pages and live mobile hotel/desktop homepage screenshots. All 11 internal
+URLs/assets/fragments passed and deployed response bytes matched the release.
+The supplied QR decoded to the live hotel route (including project prefix),
+which browser checks opened successfully. Compared all supplied PNG bytes to
+the ZIP: unchanged. Diff whitespace check passed.
+
+Temporary validation commands were `node /private/tmp/dorrigo-browser-check/check.cjs
+BASE_URL` and `node /private/tmp/dorrigo-browser-check/links.cjs BASE_URL` with
+local and live base URLs; QR decoding used Apple's Vision barcode request.
+These temporary tools are not project dependencies. Physical device scanning
+and a full screen-reader audit remain unperformed.
+
+The workflow emitted non-blocking action-runtime deprecation and upcoming
+Ubuntu runner migration notices. Retained the user's existing workflow for this
+release; review action versions separately. Asset permissions/credits and
+committee/site-owner review remain open as documented in the brief.
+
+Handover: site committed, pushed and verified deployed at the revision above.
+Status/log updates follow in a documentation-only commit with [skip ci], keeping
+the verified site deployment unchanged. Next recommendation is committee review
+of these two live pages and recording content/asset permission decisions.

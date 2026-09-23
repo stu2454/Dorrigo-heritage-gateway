@@ -7,3 +7,12 @@
 
 /* Keep anchor targets visible below the sticky navigation. */
 html{scroll-padding-top:150px}a:focus-visible{outline:3px solid currentColor;outline-offset:4px}
+
+/* Sourced story photographs retain their proportions and visible credits. */
+.story-photo{margin:0 0 32px;background:var(--paper);border:1px solid var(--line)}
+.story-photo>img{width:100%;height:auto}
+.story-photo figcaption{padding:14px 16px;font-size:.82rem;line-height:1.6;color:var(--muted)}
+.story-photo figcaption a{overflow-wrap:anywhere}
+.wedding-photo{max-width:380px}
+.wedding-portrait{position:relative;overflow:hidden;aspect-ratio:136/204;background:#eee}
+.wedding-portrait img{position:absolute;width:337.5%;max-width:none;height:auto;left:-201.47%;top:-201.96%}

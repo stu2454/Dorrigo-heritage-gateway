@@ -76,3 +76,11 @@ Committee endorsement, hotel/site-owner review, asset credits and documented
 permissions, museum-controlled domain/ownership, content review responsibility,
 physical feasibility and funding are unresolved. Resolve relevant permissions
 before expanding or presenting the concept as an official visitor service.
+
+## Hotel photograph addition — 23 September 2026
+
+Requested scope: add sourced photographs of the hotel and Michael Feros to the
+existing hotel demonstration. Use dated captions, accessible alternative text
+and visible credits; retain the concept status. Asset sources and reuse evidence
+are recorded once in [docs/IMAGE_CREDITS.md](docs/IMAGE_CREDITS.md). The requester
+confirmed hotel/family permission for website use of the booklet photographs.

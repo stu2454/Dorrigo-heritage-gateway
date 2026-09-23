@@ -65,3 +65,23 @@ Handover: site committed, pushed and verified deployed at the revision above.
 Status/log updates follow in a documentation-only commit with [skip ci], keeping
 the verified site deployment unchanged. Next recommendation is committee review
 of these two live pages and recording content/asset permission decisions.
+
+## 2026-09-23 — hotel photographs
+
+Added a 2006 exterior photograph by John Catsoulis (public domain), a 2012
+verandah photograph by Jan Smith (CC BY 2.0), and the identified wedding portrait
+of Michael Feros and Elene Haniotis from page 3 of the hotel's history booklet.
+The project owner explicitly confirmed hotel/family permission covers website
+use. Recorded sources, credit lines, reuse evidence and permission limitations
+in docs/IMAGE_CREDITS.md. No historical image was generated or retouched.
+
+Retained original wedding image-layer bytes and used a CSS viewport to show
+its photograph region. Added dated captions, alt text, explicit dimensions and
+lazy loading for lower images. Updated the museum-content paragraph to reflect
+the images now supplied. Validation and publication pending at this entry.
+
+Local Chrome checks passed at 320, 390, 768 and 1440 pixels, including image
+decoding, direct hotel access, navigation, no horizontal overflow and zero axe
+WCAG A/AA violations. Visually inspected the desktop hotel layout and portrait
+framing. All 14 internal URL/asset/fragment checks passed. Final caption wording
+was shortened to keep permission administration in the source record.

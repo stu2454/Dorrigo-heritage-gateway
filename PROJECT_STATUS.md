@@ -6,6 +6,15 @@ This snapshot is carried by a subsequent documentation-only commit; use
 `git log 1a9556f..HEAD` to identify later changes. No site files changed in that
 handover commit, which skips CI to retain the verified deployment revision.
 
+## Current local update — hotel photographs
+
+Based on Git revision `48dbafabb881751f48e6fd14ad7fdc113ce5ba90`. Added
+three hotel-page photographs: 2006 exterior, 2012 verandah and Michael/Elene’s
+1929 wedding portrait. Website permission confirmed by the requester; see
+[image provenance](docs/IMAGE_CREDITS.md). Local Chrome checks at 320, 390,
+768 and 1440 pixels passed with zero axe violations. Publication pending; the
+deployment evidence below still describes the previous release.
+
 ## Verified state
 
 - Repository: https://github.com/stu2454/Dorrigo-heritage-gateway.git
